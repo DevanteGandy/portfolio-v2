@@ -1,9 +1,9 @@
 import React from "react";
-import "./header.css"
+import "./mobile.css"
 
 export default function Mobile({isOpen, setIsOpen}) {
 return (
-    <div className="mobile">
+    <div className="mobile-menu">
         <div className="close-icon" onClick={()=>setIsOpen(!isOpen)}>
         <i class="far fa-times-circle"></i>
         </div>

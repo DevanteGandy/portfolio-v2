@@ -1,9 +1,8 @@
 import { div } from "prelude-ls";
 import React, { useState } from "react";
 import "./header.css"
-import Desktop from "./Desktop.js"
-import Mobile from "./Mobile.js"
-
+import Desktop from "../desktop/Desktop.js"
+import Mobile from "../mobile/Mobile.js"
  function Header() {
     const [isOpen,setIsOpen] = useState(false)
     return (
