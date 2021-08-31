@@ -1,21 +1,37 @@
 import { div } from "prelude-ls";
-import React from "react";
+import React, { useState } from "react";
 import "./header.css"
 import Desktop from "./Desktop.js"
 import Mobile from "./Mobile.js"
 
-export default function Header() {
+ function Header() {
+    const [isOpen,setIsOpen] = useState(false)
     return (
        <div className="header">
-           <div className="logo">Dg.</div>
-           <div className="menu">
+
+           <div className="logo">Devante Gandy.</div>
+
+           <div className="sidebar">
+
               <div className="desktop">
                   <Desktop />
               </div>
+
               <div className="mobile">
-              <Mobile />
+
+                <div onClick={()=>setIsOpen(!isOpen)}>
+                <i class="fas fa-bars" id="menu-bars"></i>
+                </div>
+
+            {isOpen && 
+            <Mobile 
+            isOpen={isOpen} 
+            setIsOpen={setIsOpen} 
+            />}
+
               </div>
            </div>
        </div>
     )
   }
+  export default Header;

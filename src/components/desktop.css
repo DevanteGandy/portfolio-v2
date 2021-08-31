@@ -1,0 +1,22 @@
+.desktop-web {
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+.web-icons {
+    font-size: 20px;
+    margin-right: 16px;
+    font-weight: 700;
+}
+.web-icons a {
+    display: flex;
+    align-items: center;
+}
+#font-icon {
+    display: flex;
+    align-items: center;
+    margin-right: 4px;
+}
+.web-icons:last-child {
+    margin-right: 0px;
+}
